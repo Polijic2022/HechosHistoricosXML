@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="utf-8" ?>
-
+<!DOCTYPE HechosHistoricos SYSTEM "HechosHistoricos.dtd">
+<!--
+<!DOCTYPE HechosHistoricos [
+        <!ELEMENT HechosHistoricos (HechoHistorico)>
+        <!ATTLIST HechoHistorico Descripcion CDATA #REQUIRED>
+        <!ELEMENT HechoHistorico (Fecha)>
+        <!ELEMENT Fecha (Dia,Mes,Año)>
+        <!ELEMENT Dia (#PCDATA)>
+        <!ELEMENT Mes (#PCDATA)>
+        <!ELEMENT Año (#PCDATA)>
+        ]>
+ -->
 <HechosHistoricos>
+    <HechoHistorico Descripcion="IBM da a conocer el PC.">
+        <Fecha>
+            <FormatoFecha>
+            <Dia>12</Dia>
+            <Mes>8</Mes>
+            <Año>1981</Año>
+            </FormatoFecha>
+        </Fecha>
+        <Epoca/>
+        <PersonajeDestacado>
+            Test persona <Nombre>Milton</Nombre> y fecha de nacimiento <FechaNacimiento>29-09-1991</FechaNacimiento>
+        </PersonajeDestacado>
+    </HechoHistorico>
+    <HechoHistorico Descripcion="IBM da a conocer el PC.">
+        <Fecha>
+
+            2022-10-09
+
+        </Fecha>
+        <Epoca/>
+        <PersonajeDestacado>
+            Test persona <Nombre>Jarly</Nombre> y fecha de nacimiento <FechaNacimiento>21-08-1995</FechaNacimiento>
+        </PersonajeDestacado>
+    </HechoHistorico>
 
 </HechosHistoricos>
