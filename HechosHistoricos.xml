@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE HechosHistoricos SYSTEM "HechosHistoricos.dtd">
-<!--
-<!DOCTYPE HechosHistoricos [
-        <!ELEMENT HechosHistoricos (HechoHistorico)>
-        <!ATTLIST HechoHistorico Descripcion CDATA #REQUIRED>
-        <!ELEMENT HechoHistorico (Fecha)>
-        <!ELEMENT Fecha (Dia,Mes,Año)>
-        <!ELEMENT Dia (#PCDATA)>
-        <!ELEMENT Mes (#PCDATA)>
-        <!ELEMENT Año (#PCDATA)>
-        ]>
- -->
-<HechosHistoricos>
+
+<HechosHistoricos version='1.1' clave="-ABCD_2454" xml:lang='es'>
     <HechoHistorico Descripcion="IBM da a conocer el PC.">
         <Fecha>
             <FormatoFecha>
@@ -20,21 +10,28 @@
             <Año>1981</Año>
             </FormatoFecha>
         </Fecha>
-        <Epoca/>
-        <PersonajeDestacado>
+        <Epoca>
+            <EPOCA1></EPOCA1>
+        </Epoca>
+        <PersonajeDestacado paisOrigen="ESPAÑA">
             Test persona <Nombre>Milton</Nombre> y fecha de nacimiento <FechaNacimiento>29-09-1991</FechaNacimiento>
         </PersonajeDestacado>
+        <FechaRelevante/>
     </HechoHistorico>
-    <HechoHistorico Descripcion="IBM da a conocer el PC.">
+    <HechoHistorico Descripcion="IBM da a conocer el PC." autor="milton">
         <Fecha>
 
             2022-10-09
 
         </Fecha>
-        <Epoca/>
-        <PersonajeDestacado>
+        <Epoca>
+            <EPOCA2></EPOCA2>
+       </Epoca>
+        <PersonajeDestacado paisOrigen="ALEMANIA" cedula="m12">
             Test persona <Nombre>Jarly</Nombre> y fecha de nacimiento <FechaNacimiento>21-08-1995</FechaNacimiento>
         </PersonajeDestacado>
+        <PersonajeDestacado paisOrigen="JAPON" cedula="m13" cedulaHermano="m13" cedulasPrimos="m12 m13"></PersonajeDestacado>
+        <FechaRelevante/>
     </HechoHistorico>
 
 </HechosHistoricos>
